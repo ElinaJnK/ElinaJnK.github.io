@@ -1,0 +1,175 @@
+/*
+========================
+GENERAL
+========================
+ */
+h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 300px;
+    color: #d6D6D6;
+    position: relative;
+    padding: 10px;
+    left: 30px;
+    margin-bottom: 30px;
+}
+p {
+    font-family: 'Bodoni Moda', serif;
+
+}
+
+hr {
+    margin-bottom:25px;
+    color: #8C1C13;
+}
+a {
+    text-decoration:none;
+}
+
+button {
+    display:inline-block;
+    transition: .30s ease;
+    top: 50%;
+    left: 50%;	
+}
+
+ul {
+    position: absolute;
+    top: 100px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    overflow: scroll;
+    margin: 0;
+    padding: 0;
+
+    /*border: 2px solid #ccc;*/
+    color: #D6D6D6;
+    font-size: 16px;
+    font-family: 'Bodoni Moda', serif;
+    -webkit-overflow-scrolling: touch;
+}
+
+li {
+    padding: 10px 20px;
+
+    border-bottom: 1px solid #ccc;
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:nth-child(even) {
+        background: #272D2D;
+    }
+}
+
+.scroll-container {
+    scroll-padding: 50px 0 0 50px;
+}
+
+.box-1 { background-color: #D6D6D6; }
+
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 500px;
+    cursor: pointer;
+    margin: auto;
+}
+
+/* 
+========================
+BUTTON ONE
+========================
+ */
+.btn-one {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 23px;	
+    color: #272D2D;
+    transition: all 0.3s;
+    position: relative;
+
+}
+.btn-one span {
+    transition: all 0.3s;
+}
+.btn-one::before {
+    content: '';
+    /*position: absolute;*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(255,255,255,0.5);
+    border-bottom-color: rgba(255,255,255,0.5);
+    transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+    letter-spacing: 2px;
+}
+.btn-one:hover::before {
+    opacity: 1; 
+    transform: scale(1, 1); 
+}
+.btn-one::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.3s;
+    background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+    opacity: 0; 
+    transform: scale(0.1, 1);
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+/*
+========================
+HANDLES
+========================
+ */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    transition: all 0.3s;
+}
+
+.fa-facebook {
+    position: absolute;
+bottom: 40px; left: 100px;
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+  background: #007bb5;
+  color: white;
+}
+
+
